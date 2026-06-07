@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Yerone Esayas Developer Profile</title>
+  <meta name="description" content="Discover the professional background, engineering stack, and verification profile of Yerone Esayas. Crack the integrated system security challenge for a premium milestone discount." />
+  <meta name="keywords" content="Yerone Esayas biography, about web developer, secure software developer, engineering portfolio, Addis Ababa profile" />
+  <meta name="author" content="Yerone Esayas" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="About Me | Yerone Esayas Developer Profile" />
+  <meta property="og:description" content="Professional web and application development background with integrated structural solutions based in Ethiopia." />
+  <meta property="og:url" content="https://yeron.vercel.app/about.html" />
+  <meta property="og:image" content="https://yeron.vercel.app/preview.jpg" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" />
+
+  <link rel="stylesheet" href="about.css">  
+</head>
+<body>
+
+<div id="canvas-container"></div>
+
+<div class="container">
+    <nav>
+        <a href="index.html" class="brand">YERON ESAYAS</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-item" id="navHome">Home</a>
+          <a href="services.html" class="nav-item" id="navServices">Services</a>
+          <a href="https://github.com/isagamaaa-web" target="_blank" class="github-nav" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          
+          <div class="custom-lang-dropdown">
+            <button class="lang-trigger-btn" onclick="toggleLangMenu(event)">🌐 <span id="currentLangLabel">EN</span></button>
+            <div class="lang-menu-box" id="langMenuBox">
+              <button class="lang-option" onclick="selectLanguage('en')">English (EN)</button>
+              <button class="lang-option" onclick="selectLanguage('am')">አማርኛ (AM)</button>
+              <button class="lang-option" onclick="selectLanguage('om')">Afaan Oromoo (OM)</button>
+              <button class="lang-option" onclick="selectLanguage('fr')">Français (FR)</button>
+              <button class="lang-option" onclick="selectLanguage('es')">Español (ES)</button>
+              <button class="lang-option" onclick="selectLanguage('tr')">Türkçe (TR)</button>
+              <button class="lang-option" onclick="selectLanguage('nl')">Nederlands (NL)</button>
+              <button class="lang-option" onclick="selectLanguage('zh')">中文 (ZH)</button>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <main class="about-content">
+        <div class="text-side">
+            <h1 id="aboutTitle" style="font-size: 3.5rem; font-weight: 900; margin-bottom: 1.5rem; background: linear-gradient(to right, #fff, #6366f1); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">About me</h1>
+            <p id="aboutBio" style="color: var(--muted); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+                I am a professional Web and App developer focused on creating modern, responsive, and high-performance solutions. 
+                With expertise in frontend and backend development, I build digital products that are fast, secure, and scalable.
+                <br><br>
+                Based in Addis Ababa, Ethiopia, I am dedicated to helping clients bring their visions to life through clean code and premium UI/UX design.
+            </p>
+        </div>
+
+        <div class="avatar-column">
+            <div class="avatar-3d-wrapper">
+                <div class="avatar-3d-card" id="avatarCard">
+                    <img src="5893233414528240493.jpg" alt="Yerone Esayas Profile Portrait Photo" loading="eager" />
+                </div>
+            </div>
+
+            <div class="challenge-box" id="quizContainer">
+                <div id="quizActive">
+                    <h3><div id="challengeTitle" style="color: #22c55e;">🎁10% Discount Challenge</div></h3>
+                    <p id="riddleText" style="margin-top: 0.5rem; margin-bottom: 1rem; color: var(--muted); font-style: italic;">Loading riddle...</p>
+                    <div class="attempts-counter" id="attemptsLeftText">Attempts remaining: 3</div>
+                    <input type="text" id="answerInput" placeholder="Type answer here...">
+                    <button class="btn btn-primary" id="btnSubmitChallenge" onclick="checkAnswer()">Submit & Claim</button>
+                    <p style="font-size: 0.75rem; margin-top: 1rem;"><div id="challengeWarning" style="color: #f24141;">Warning: 3 attempts total allowed per device. Incorrect choices will cause locking rules to initiate.</div></p>
+                </div>
+
+                <div id="quizLocked" class="locked">
+                    <p id="lockTitle" style="font-size: 1.4rem; letter-spacing: 1px;">🚫 DEVICE LOCKED</p>
+                    <p id="lockDesc" style="font-size: 0.85rem; font-weight: normal; margin-top: 8px; color: var(--muted); line-height: 1.4;">This device is no longer eligible. Our security system has logged this attempt.</p>
+                </div>
+
+                <div id="quizSuccess" class="success-msg">
+                    <p id="successTitle">✅ CODE UNLOCKED!</p>
+                    <p style="color: var(--text); font-size: 1.2rem; margin: 10px 0; border: 2px dashed var(--success); padding: 10px; font-weight: 900; background: rgba(34, 197, 94, 0.05);">TURBOTECH10</p>
+                    <p id="successDesc" style="font-weight: normal; font-size: 0.85rem; color: var(--muted);">Screenshot this and send it to me!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="about.js"></script>
+</body>
+</html>

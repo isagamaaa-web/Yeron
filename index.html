@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yerone Esayas | Professional Web & Software Developer</title>
+  <meta name="description" content="Yerone Esayas — Professional Frontend and Backend Developer delivering modern, high-performance, responsive websites and secure digital applications based in Addis Ababa, Ethiopia." />
+  <meta name="keywords" content="web developer, frontend developer, backend developer, fullstack engineer, portfolio website, modern web design, HTML CSS JS, Ethiopia developer, Yerone Esayas, Turbo Tech" />
+  <meta name="author" content="Yerone Esayas" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yerone Esayas | Professional Web & Software Developer" />
+  <meta property="og:description" content="Frontend and Backend developer focused on clean code, modern UI/UX, and high-quality scalable digital products.,Prfofessional web developer, cheap software developer, 
+  software developer in Addis Ababa, Ethiopia" />
+  <meta property="og:url" content="https://yeron.vercel.app/index.html" />
+  <meta property="og:image" content="https://yeron.vercel.app/preview.jpg" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" />
+  
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div id="canvas-container"></div>
+
+  <div class="container">
+    <nav>
+      <a href="index.html" class="brand">YERON ESAYAS</a>
+      <div class="nav-links">
+        <a href="services.html" class="nav-item" id="navServices">Services</a>
+        <a href="about.html" class="nav-item" id="navAbout">About Me</a>
+        <a href="https://github.com/isagamaaa-web" target="_blank" class="github-nav" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        
+        <div class="custom-lang-dropdown">
+          <button class="lang-trigger-btn" onclick="toggleLangMenu(event)">🌐 <span id="currentLangLabel">EN</span></button>
+          <div class="lang-menu-box" id="langMenuBox">
+            <button class="lang-option" onclick="selectLanguage('en')">English (EN)</button>
+            <button class="lang-option" onclick="selectLanguage('am')">አማርኛ (AM)</button>
+            <button class="lang-option" onclick="selectLanguage('om')">Afaan Oromoo (OM)</button>
+            <button class="lang-option" onclick="selectLanguage('fr')">Français (FR)</button>
+            <button class="lang-option" onclick="selectLanguage('es')">Español (ES)</button>
+            <button class="lang-option" onclick="selectLanguage('tr')">Türkçe (TR)</button>
+            <button class="lang-option" onclick="selectLanguage('nl')">Nederlands (NL)</button>
+            <button class="lang-option" onclick="selectLanguage('zh')">中文 (ZH)</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="avatar-3d-wrapper">
+        <div class="avatar-3d-card" id="avatarCard">
+          <img src="5893233414528240493.jpg" alt="Yerone Esayas Portfolio Portrait Photo" loading="eager" />
+        </div>
+      </div>
+      <h1 id="heroTitle">Building Scalable <br> <strong>Web Products.</strong></h1>
+      <p id="heroSubtitle" style="color: var(--muted); max-width: 600px; margin-bottom: 2.5rem; font-size: 1.1rem; line-height: 1.6;">Frontend and Backend developer focused on clean fully functioning code, modern UI/UX, and high-quality digital solutions.</p>
+      
+      <div class="hero-btns">
+        <button class="btn btn-primary" id="btnHire" onclick="toggleModal()">Hire Me Now</button>
+        <a href="https://www.instagram.com/offx_cheto/" target="_blank" class="btn btn-social" rel="noopener noreferrer">Instagram</a>
+        <a href="https://t.me/Esayas_G" target="_blank" class="btn btn-social" rel="noopener noreferrer">Telegram</a>
+        <a href="mailto:yeroneee133@gmail.com" class="btn btn-social">Email</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 id="projectsHeading" style="text-align: center; margin-bottom: 3rem; font-size: 2rem; font-weight: 900; letter-spacing: -0.5px;">FEW OF MY PROJECTS</h2>
+      <div class="grid">
+        <div class="project-card">
+          <img src="beta.png" alt="Project Beta Landing Page" loading="lazy" />
+          <h3>Project Beta</h3>
+          <p class="proj-desc" style="color: var(--muted); margin-top: 0.5rem;">SEO-optimized landing page for scaling businesses.</p>
+        </div>
+        <div class="project-card">
+          <img src="ai.png" alt="AI Chatbot Module Solution" loading="lazy" />
+          <h3>AI Chatbot</h3>
+          <p class="proj-desc" style="color: var(--muted); margin-top: 0.5rem;">Advanced AI with order processing capabilities.</p>
+        </div>
+        <div class="project-card">
+          <img src="perodic.png" alt="Interactive Chemistry Lab View" loading="lazy" />
+          <h3>Chemistry Lab</h3>
+          <p class="proj-desc" style="color: var(--muted); margin-top: 0.5rem;">Interactive platform for periodic table exploration.</p>
+        </div>
+        <div class="project-card">
+          <img src="game.png" alt="Custom Video Game Builds" loading="lazy" />
+          <h3>Custom Gaming</h3>
+          <p class="proj-desc" style="color: var(--muted); margin-top: 0.5rem;">Personal game builds and community clones.</p>
+        </div>
+        <div class="project-card">
+          <img src="login.png" alt="High Security Administration Login System" loading="lazy" />
+          <h3>Admin Login</h3>
+          <p class="proj-desc" style="color: var(--muted); margin-top: 0.5rem;">High-security dashboard entry systems.</p>
+        </div>
+        <div class="project-card">
+          <img src="data.png" alt="Secure Data Collector Infrastructure" loading="lazy" />
+          <h3>Data Collector</h3>
+          <p class="proj-desc" style="color: var(--muted); margin-top: 0.5rem;">Safe and scalable data gathering infrastructure.</p>
+        </div>
+        <div class="project-card">
+          <img src="JARVIS.png" alt="Jarvis Virtual AI Module" loading="lazy" />
+          <h3>JARVIS</h3>
+          <p class="proj-desc" style="color: var(--muted); margin-top: 0.5rem;">I have built a real life J.A.R.V.I.S from ironman and it doesn't steal any infos.</p>
+        </div>
+        <div class="project-card">
+          <img src="Netpro.png" alt="Advanced Network Audit IP Scanner Framework" loading="lazy" />
+          <h3>IP/PORT SCANNER</h3>
+          <p class="proj-desc" style="color: var(--muted); margin-top: 0.5rem;">This scanner doesn't only scan for ports, it scans IP, wifi all at once and maps all findings.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p id="footerText">© 2026 Yerone Esayas. Based in Ethiopia.</p>
+    </footer>
+  </div>
+
+  <div class="modal" id="hireModal">
+    <div class="modal-content">
+      <h2 id="modalTitle" style="margin-bottom: 0.5rem;">Let's Work Together</h2>
+      <p id="modalSubtitle" style="color: var(--muted); font-size: 0.9rem;">Choose your preferred platform</p>
+      <div class="modal-links">
+        <a href="https://t.me/Esayas_G" target="_blank" class="btn btn-outline" rel="noopener noreferrer">Telegram</a>
+        <a href="https://www.instagram.com/offx_cheto/" target="_blank" class="btn btn-outline" rel="noopener noreferrer">Instagram</a>
+        <a href="mailto:yeroneee133@gmail.com" class="btn btn-outline">Email Me</a>
+        <button class="btn" id="modalClose" style="color: var(--muted); background: transparent;" onclick="toggleModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

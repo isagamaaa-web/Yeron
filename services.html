@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Professional Web & Software Solutions</title>
+  <meta name="description" content="Explore professional development services by Yerone Esayas. Offering high-performance frontend designs, secure backend architectures, network auditing, and automation systems." />
+  <meta name="keywords" content="frontend engineering, backend architecture, cybersecurity audit, network scanner, JARVIS automation, Addis Ababa developer" />
+  <meta name="author" content="Yerone Esayas" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Our Services | Professional Web & Software Solutions" />
+  <meta property="og:description" content="Premium frontend designs, secure backend architectures, and local network optimization solutions based in Ethiopia." />
+  <meta property="og:url" content="https://yeron.vercel.app/services.html" />
+  <meta property="og:image" content="https://yeron.vercel.app/preview.jpg" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" />
+
+<link rel="stylesheet" href="ser.css">
+</head>
+<body>
+
+  <div id="canvas-container"></div>
+
+  <div class="container">
+    <nav>
+      <a href="index.html" class="brand">YERON ESAYAS</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-item" id="navHome">Home</a>
+        <a href="about.html" class="nav-item" id="navAbout">About Me</a>
+        <a href="https://github.com/isagamaaa-web" target="_blank" class="github-nav" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        
+        <div class="custom-lang-dropdown">
+          <button class="lang-trigger-btn" onclick="toggleLangMenu(event)">🌐 <span id="currentLangLabel">EN</span></button>
+          <div class="lang-menu-box" id="langMenuBox">
+            <button class="lang-option" onclick="selectLanguage('en')">English (EN)</button>
+            <button class="lang-option" onclick="selectLanguage('am')">አማርኛ (AM)</button>
+            <button class="lang-option" onclick="selectLanguage('om')">Afaan Oromoo (OM)</button>
+            <button class="lang-option" onclick="selectLanguage('fr')">Français (FR)</button>
+            <button class="lang-option" onclick="selectLanguage('es')">Español (ES)</button>
+            <button class="lang-option" onclick="selectLanguage('tr')">Türkçe (TR)</button>
+            <button class="lang-option" onclick="selectLanguage('nl')">Nederlands (NL)</button>
+            <button class="lang-option" onclick="selectLanguage('zh')">中文 (ZH)</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header-section">
+      <h1 id="pageTitle">Professional Services</h1>
+      <p id="pageSubtitle" style="color: var(--muted); max-width: 600px; margin: 0 auto;">High-performance engineering architectures tailored for digital security, performance, and scalability.</p>
+    </header>
+
+    <main class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">✦</div>
+        <h3 class="srv-title">Frontend Engineering</h3>
+        <p class="srv-desc">Creating stunning, high-fidelity dark interfaces and responsive fluid layouts. Focused strictly on lightning-fast loading speeds, clean semantic code structures, and intuitive modern interactive UI/UX components.</p>
+        <div class="tech-badges"><span class="badge">HTML5 / CSS3</span><span class="badge">JavaScript (ES6+)</span><span class="badge">Three.js Basics</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+        <h3 class="srv-title">Backend Integration</h3>
+        <p class="srv-desc">Architecting robust, scalable server solutions and logical routing structures. Expert configuration for custom user session states, fast JSON data manipulation, secure tracking rules, and API endpoints.</p>
+        <div class="tech-badges"><span class="badge">Python</span><span class="badge">Session Management</span><span class="badge">Secure Storage</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛡️</div>
+        <h3 class="srv-title">Network & Cybersecurity Auditing</h3>
+        <p class="srv-desc">Evaluating infrastructure vulnerability posture through local custom scanning arrays. Designing specialized dashboards to accurately map IP routing tables, track active hardware ports, and protect local operations from information exposure.</p>
+        <div class="tech-badges"><span class="badge">IP/Port Mapping</span><span class="badge">Local Network Audits</span><span class="badge">Privacy Isolation</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3 class="srv-title">Custom Voice & AI Automation</h3>
+        <p class="srv-desc">Building local execution environments and intelligent automation routines inspired by premium system models. Configured to interface securely using isolated data paths that absolutely prevent unauthorized external leaks.</p>
+        <div class="tech-badges"><span class="badge">Custom AI Models</span><span class="badge">Local Automation</span><span class="badge">Zero Data-Theft</span></div>
+      </div>
+    </main>
+
+    <footer>
+      <p id="footerText">© 2026 Yerone Esayas. Based in Ethiopia.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="ser.js"></script>
+</body>
+</html>
